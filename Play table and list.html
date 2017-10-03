@@ -8,6 +8,7 @@
         <!--Try to use "border-collapse:collapse;"-->
 
 
+<!--________________________________________________________________________________________________________-->
 <style>
        table,th,tr,td{
                 border:1px solid black;
@@ -153,21 +154,46 @@
                </tr>
         </table>
 <!--________________________________________________________________________________________________________-->
-         <ul>
+         <ul list-style-type="circle">
              <li>unordered list</li>
              <li>unordered list</li>
              <li>unordered list</li>
          </ul>
 <!--________________________________________________________________________________________________________-->
-         <li>
-             <ol>ordered list</ol>
-         </li>
+         <br>
+         <hr>
 <!--________________________________________________________________________________________________________-->
-          <ol>
-             <li>ordered list</li>
-             <li>ordered list</li>
-             <li>ordered list</li>
-             <li>ordered list</li>
+        <style>
+              ol{
+                  list-style-type:none;/*make numbers disappear/appear*/
+                  margin:0;
+                  padding:0;
+                  overflow:hidden;/*???*/
+                  background-color:lightgreen;
+                 }     
+               li{
+                  float:right;
+                  
+                  }
+               li a{
+                    display:block;
+                    color:black;
+                    text-align:center;
+                    padding:20px;/*useful when want to seperate text that sticked together*/
+                    text-decoration:italic;
+                    
+                    }
+               li a:hover{
+                          background-color:lightblue;
+                          }                 
+
+        </style>  
+         
+         <ol>
+             <li><a href="#home">ordered list</a></li>
+             <li><a href="#new">ordered list</a></li>
+             <li><a href="#about">ordered list</a></li>
+             <li><a href="#my_acc">ordered list</a></li>
          </ol>
 </body>
 </html>
